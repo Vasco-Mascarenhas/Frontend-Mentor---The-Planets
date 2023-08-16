@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +12,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --white: #ffffff;
+  --darkBlue: #070724;
+  --darkGrey: #38384f;
+  --lightGrey: #838391;
+  --lightBlue: #419ebb;
+  --yellow: #eda249;
+  --purple: #6f2ed6;
+  --lightRed: #d14c32;
+  --red: #d83a34;
+  --orange: #cd5120;
+  --green: #1ec2a4;
+  --blue: #2d68f0;
 }
 
 body {
