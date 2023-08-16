@@ -30,4 +30,12 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--darkBlue);
+  background-image: url("/assets/background-stars.svg");
+  height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }

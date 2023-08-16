@@ -1,0 +1,30 @@
+header {
+  padding-inline: 32px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--lightGrey);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-size: 28px;
+}
+
+ul {
+  display: inline-flex;
+  gap: 33px;
+  list-style-type: none;
+  align-items: center;
+}
+
+li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
