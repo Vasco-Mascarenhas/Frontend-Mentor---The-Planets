@@ -1,0 +1,17 @@
+button {
+  font-family: "League Spartan";
+  height: 48px;
+  background-color: var(--darkBlue);
+  border: 1px solid var(--white);
+  margin-block: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  padding-inline: 28px;
+}
+
+button > span {
+  padding-right: 25px;
+}

@@ -1,0 +1,21 @@
+.planet-container {
+  display: flex;
+  align-items: center;
+}
+
+.planetImg {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planetImg img {
+  width: 100%;
+  max-width: 350px;
+}
+.planetContent {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}

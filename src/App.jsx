@@ -10,13 +10,15 @@ function App() {
     setPlanet(link);
   };
 
+  const planetData = data.filter((planetData) => planetData.name === planet);
+
   return (
     <>
       <NavBar
         onNavClick={handleNavClick}
         items={data.map((item) => item.name)}
       />
-      <Planet planet={planet} />
+      <Planet planet={planetData} />
     </>
   );
 }
