@@ -6,7 +6,7 @@ import Planet from "./components/planet/Planet";
 console.log(data);
 function App() {
   const [planet, setPlanet] = useState("Mercury");
-  const [activeLink, setActiveLink] = useState(false);
+  const [activeLink, setActiveLink] = useState("Mercury");
   const handleNavClick = (link) => {
     setPlanet(link);
     setActiveLink(link);

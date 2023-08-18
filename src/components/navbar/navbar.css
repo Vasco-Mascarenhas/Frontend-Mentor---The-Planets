@@ -4,6 +4,10 @@ header {
   border-bottom: 1px solid var(--lightGrey);
 }
 
+.burguer {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,7 +36,9 @@ li {
 }
 
 li.active {
-  color: red;
+  text-underline-position: under;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
 }
 
 @media screen and (max-width: 940px) {
@@ -43,12 +49,33 @@ li.active {
 }
 
 @media screen and (max-width: 710px) {
+  header {
+    padding: 0;
+  }
   nav {
     flex-direction: column;
     align-items: center;
   }
 
+  nav .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav .burguer {
+    display: block;
+  }
+
   nav ul {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  nav ul li {
+    width: 100%;
+    font-size: 15px;
   }
 }

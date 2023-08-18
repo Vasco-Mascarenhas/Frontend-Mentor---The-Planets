@@ -17,7 +17,6 @@ const Button = ({
     { name: "Saturn", color: "var(--orange)" },
     { name: "Uranus", color: "var(--green)" },
     { name: "Neptune", color: "var(--blue)" },
-    // ... other planets
   ];
 
   const selectedPlanetData = planetData.find(
