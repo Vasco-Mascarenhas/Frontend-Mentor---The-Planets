@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  box-sizing: border-box;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,15 +27,30 @@
   --blue: #2d68f0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: var(--darkBlue);
   background-image: url("/assets/background-stars.svg");
-  height: 100vh;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding-inline: 20px;
+}
+
+@media screen and (max-width: 940px) {
+  body {
+    height: initial;
+  }
 }

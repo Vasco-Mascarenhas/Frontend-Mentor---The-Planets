@@ -5,9 +5,11 @@ import data from "./../data.json";
 import Planet from "./components/planet/Planet";
 console.log(data);
 function App() {
-  const [planet, setPlanet] = useState("");
+  const [planet, setPlanet] = useState("Mercury");
+  const [activeLink, setActiveLink] = useState(false);
   const handleNavClick = (link) => {
     setPlanet(link);
+    setActiveLink(link);
   };
 
   const planetData = data.filter((planetData) => planetData.name === planet);
@@ -17,6 +19,7 @@ function App() {
       <NavBar
         onNavClick={handleNavClick}
         items={data.map((item) => item.name)}
+        activeLink={activeLink}
       />
       <Planet planet={planetData} />
     </>

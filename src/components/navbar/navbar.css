@@ -19,6 +19,7 @@ ul {
   gap: 33px;
   list-style-type: none;
   align-items: center;
+  padding: 0;
 }
 
 li {
@@ -28,4 +29,15 @@ li {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+li.active {
+  color: red;
+}
+
+@media screen and (max-width: 940px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
