@@ -14,11 +14,19 @@ const Planet = ({ planet }) => {
           <div key={planet.name} className="container planet-container">
             <div className="planetImg">
               {activeButtonIndex === 0 ? (
-                <img src={planet.images.planet} alt="" />
+                <img key={planet.name} src={planet.images.planet} alt="" />
               ) : activeButtonIndex === 1 ? (
-                <img src={planet.images.internal} alt="" />
+                <img key={planet.name} src={planet.images.internal} alt="" />
               ) : activeButtonIndex === 2 ? (
-                <img src={planet.images.geology} alt="" />
+                <>
+                  <img key={planet.name} src={planet.images.planet} alt="" />
+                  <img
+                    key={planet.name}
+                    className="planet-geo"
+                    src={planet.images.geology}
+                    alt=""
+                  />
+                </>
               ) : (
                 ""
               )}
