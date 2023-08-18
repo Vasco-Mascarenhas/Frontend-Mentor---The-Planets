@@ -98,4 +98,8 @@ main {
   .infoBox h2 {
     font-size: 20px;
   }
+
+  .planetContent p {
+    height: 120px;
+  }
 }
