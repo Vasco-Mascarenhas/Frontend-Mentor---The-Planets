@@ -102,4 +102,39 @@ main {
   .planetContent p {
     height: 120px;
   }
+  .planetContent h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .planetContent {
+    flex-direction: column;
+  }
+
+  .planet-info {
+    width: 100%;
+  }
+
+  .planet-btns {
+    width: 100%;
+  }
+  .planetInfo {
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .planetInfo .infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .infoBox span {
+    font-size: 18px;
+  }
 }

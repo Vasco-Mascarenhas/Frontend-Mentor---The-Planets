@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import "./planet.css";
 import Button from "../button/Button";
 
@@ -9,19 +9,19 @@ const Planet = ({ planet }) => {
 
   return (
     <main>
-      {planet.map((planet) => (
-        <>
+      {planet.map((planet, index) => (
+        <Fragment key={planet.name}>
           <div key={planet.name} className="container planet-container">
-            <div className="planetImg">
+            <div key={planet.name} className="planetImg">
               {activeButtonIndex === 0 ? (
-                <img key={planet.name} src={planet.images.planet} alt="" />
+                <img key={index} src={planet.images.planet} alt="" />
               ) : activeButtonIndex === 1 ? (
-                <img key={planet.name} src={planet.images.internal} alt="" />
+                <img key={index} src={planet.images.internal} alt="" />
               ) : activeButtonIndex === 2 ? (
                 <>
-                  <img key={planet.name} src={planet.images.planet} alt="" />
+                  <img key={index} src={planet.images.planet} alt="" />
                   <img
-                    key={planet.name}
+                    key={planet.name + index}
                     className="planet-geo"
                     src={planet.images.geology}
                     alt=""
@@ -44,7 +44,10 @@ const Planet = ({ planet }) => {
                   ""
                 )}
                 <span>
-                  Source: <a href={planet.overview.source}>Wikipedia</a>
+                  Source:{" "}
+                  <a target="_blank" href={planet.overview.source}>
+                    Wikipedia
+                  </a>
                 </span>
               </div>
               <div className="planet-btns">
@@ -79,7 +82,7 @@ const Planet = ({ planet }) => {
               <h2>{planet.temperature}</h2>
             </div>
           </div>
-        </>
+        </Fragment>
       ))}
     </main>
   );
