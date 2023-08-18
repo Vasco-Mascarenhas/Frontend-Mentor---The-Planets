@@ -81,6 +81,11 @@ main {
     align-items: center;
     gap: 20px;
   }
+
+  .planetImg {
+    width: 100%;
+    height: 500px;
+  }
   .planet-info {
     width: 50%;
   }
