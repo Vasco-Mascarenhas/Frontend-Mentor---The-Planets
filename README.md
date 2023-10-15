@@ -3,7 +3,7 @@
 
 A [frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f) "Intermediate" challenge.
 
-![thePlanets](https://raw.githubusercontent.com/Vasco-Mascarenhas/md-images/main/Captura%20de%20ecr%C3%A3%202023-10-15%20144151.png?token=GHSAT0AAAAAACGIGP6I3HEZDKOQKER7JJ4SZJL5YNA)
+![thePlanets](https://raw.githubusercontent.com/Vasco-Mascarenhas/Frontend-Mentor---The-Planets/main/image.png)
 ## Brief
 
 Your challenge is to build out this 8-page planets fact site and get it looking as close to the design as possible.
